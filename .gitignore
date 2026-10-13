@@ -1,0 +1,49 @@
+# AMD Xilinx Vivado generated directories
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.gen/
+xsim.dir/
+
+# Vivado simulation and compilation artifacts
+*.log
+*.jou
+*.pb
+*.wdb
+*.vcd
+*.str
+webtalk*.log
+webtalk*.jou
+webtalk*.xml
+xvlog*.log
+xvlog*.pb
+xelab*.log
+xelab*.pb
+xsim*.log
+xsim*.jou
+xsim*.dbg
+xsim*.mem
+xsim*.reloc
+xsim*.rlx
+xsim*.rtti
+xsim*.svtype
+xsim*.type
+xsim*.version
+xsim*.xdbg
+xsimSettings.ini
+Compile_Options.txt
+TempBreakPointFile.txt
+
+# Binary object files
+*.o
+*.obj
+*.exe
+*.dmp
+
+# OS-specific files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

@@ -38,6 +38,9 @@ Below is the summary table of all completed projects included in this repository
 | 8 | **4-Bit Relational Comparator** | [`comparator-4bit-relational/`](comparator-4bit-relational/README.md) | Unsigned magnitude comparison using built-in relational operators (`<`, `>`, `==`) | *RTL Implemented (Testbench missing in original workspace)* |
 | 9 | **4-Bit Bitwise Comparator** | [`comparator-4bit-bitwise/`](comparator-4bit-bitwise/README.md) | Magnitude comparison using bitwise XOR, AND-NOT, and MSB-first priority inspection | **Verified** (`xsim`, 60 ns) |
 | 10 | **4-Bit Arithmetic Logic Unit** | [`alu-4bit/`](alu-4bit/README.md) | Addition, subtraction, AND, XOR; 5-bit width handling for unsigned carry-out; zero flag | **Verified** (`xsim`, 100 ns) |
+| 11 | **D Flip-Flop Architectures** | [`d-flip-flops/`](d-flip-flops/README.md) | Positive edge-triggered DFF; synchronous reset; asynchronous reset; clock enable | **Verified** (`xsim`, 4 variants) |
+| 12 | **4-Bit Register Architectures** | [`registers-4bit/`](registers-4bit/README.md) | Multi-bit PIPO registers with clock enable, synchronous reset, and asynchronous reset | **Verified** (`xsim`, 3 variants) |
+| 13 | **4-Bit Counter Architectures** | [`counters-4bit/`](counters-4bit/README.md) | Synchronous up counter, up counter with enable, down counter, and bidirectional up/down counter | **Verified** (`xsim`, 4 variants) |
 
 ---
 
@@ -92,9 +95,43 @@ verilog-practice/
 │   ├── rtl/comparator4bit_logic.v
 │   ├── tb/tb_compare4bit.v
 │   └── README.md
-└── alu-4bit/
-    ├── rtl/ALU4bit.v
-    ├── tb/tb_ALU4bit.v
+├── alu-4bit/
+│   ├── rtl/ALU4bit.v
+│   ├── tb/tb_ALU4bit.v
+│   └── README.md
+├── d-flip-flops/
+│   ├── rtl/
+│   │   ├── d_flip_flop.v
+│   │   ├── dff_sync_reset.v
+│   │   ├── dff_async_reset.v
+│   │   └── dff_enable.v
+│   ├── tb/
+│   │   ├── tb_d_flip_flop.v
+│   │   ├── tb_dff_sync_reset.v
+│   │   ├── tb_dff_async_reset.v
+│   │   └── tb_dff_enable.v
+│   └── README.md
+├── registers-4bit/
+│   ├── rtl/
+│   │   ├── register4_enable.v
+│   │   ├── register4_syncreset_enable.v
+│   │   └── register4_asyncreset_enable.v
+│   ├── tb/
+│   │   ├── tb_register4_enable.v
+│   │   ├── tb_register4_syncreset_enable.v
+│   │   └── tb_register4_asyncreset_enable.v
+│   └── README.md
+└── counters-4bit/
+    ├── rtl/
+    │   ├── counter4.v
+    │   ├── counter4_enable.v
+    │   ├── down_counter4.v
+    │   └── up_down_counter.v
+    ├── tb/
+    │   ├── tb_counter4.v
+    │   ├── tb_counter4_enable.v
+    │   ├── tb_down_counter4.v
+    │   └── tb_up_down_counter.v
     └── README.md
 ```
 
